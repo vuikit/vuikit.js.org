@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`basic 1`] = `
+"{
+  render: function render() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c('div', [_vm._v('content')])
+  }
+}"
+`;
+
+exports[`components 1`] = `
+"{
+  render: function render() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c('div', [_vm._v('content')])
+  },
+  components: {
+    foo: {
+      render: function render() {
+        var _vm = this
+        var _h = _vm.$createElement
+        var _c = _vm._self._c || _h
+        return _c('div', [_vm._v('component foo')])
+      }
+    },
+    bar: {
+      render: function render() {
+        var _vm = this
+        var _h = _vm.$createElement
+        var _c = _vm._self._c || _h
+        return _c('div', [_vm._v('component bar')])
+      },
+      data: function data() {
+        return { foo: 'bar' }
+      }
+    }
+  }
+}"
+`;
+
+exports[`data 1`] = `
+"{
+  render: function render() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c('div', [_vm._v('content')])
+  },
+  data: function data() {
+    return { foo: 'bar' }
+  }
+}"
+`;

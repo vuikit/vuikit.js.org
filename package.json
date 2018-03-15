@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "vuikit-site",
+  "version": "0.0.1",
+  "workspaces": [
+    "packages/*",
+    "modules/*"
+  ],
+  "description": "Vuikit Site and Documentation",
+  "author": {
+    "name": "Miljan Aleksic",
+    "url": "https://twitter.com/AleksicMiljan"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "build:gh": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "lint": "npx eslint --ext .js,.vue --ignore-path .gitignore .",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-html": "^4.0.2",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "less": "^3.0.1",
+    "less-loader": "^4.0.6",
+    "micro": "^9.1.4",
+    "nuxt": "^1.4.0",
+    "uikit": "3.0.0-beta.38"
+  }
+}

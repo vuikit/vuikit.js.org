@@ -1,0 +1,7 @@
+.nuxt
+npm-debug.log
+yarn-error.log
+
+dist/
+node_modules/
+static/fonts/

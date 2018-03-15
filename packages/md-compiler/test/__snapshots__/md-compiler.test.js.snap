@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`code 1`] = `
+"{
+  render: function render() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _vm._m(0)
+  },
+  staticRenderFns: [
+    function() {
+      var _vm = this
+      var _h = _vm.$createElement
+      var _c = _vm._self._c || _h
+      return _c('div', [
+        _c('div', { staticClass: 'uk-margin-medium' }, [
+          _c('pre', [
+            _c('code', { staticClass: 'lang-js hljs' }, [
+              _c('span', { staticClass: 'hljs-function' }, [
+                _c('span', { staticClass: 'hljs-keyword' }, [
+                  _vm._v('function')
+                ]),
+                _vm._v(' ('),
+                _c('span', { staticClass: 'hljs-params' }),
+                _vm._v(') ')
+              ]),
+              _vm._v('{}')
+            ])
+          ])
+        ])
+      ])
+    }
+  ],
+  components: {}
+}
+"
+`;
+
+exports[`code:example 1`] = `
+"{
+  render: function render() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c('div', [_c('md-code-example-1')], 1)
+  },
+  components: {
+    'md-code-example-1': {
+      render: function render() {
+        var _vm = this
+        var _h = _vm.$createElement
+        var _c = _vm._self._c || _h
+        return _c(
+          'div',
+          { staticClass: 'uk-position-relative uk-margin-medium' },
+          [
+            _c(
+              'vk-tab',
+              { staticClass: 'uk-margin' },
+              [
+                _c(
+                  'vk-tab-item',
+                  { attrs: { label: 'Preview', name: 'preview' } },
+                  [_c('div', [_vm._v('content')])]
+                ),
+                _vm._v(' '),
+                _c(
+                  'vk-tab-item',
+                  { attrs: { label: 'Markup', name: 'markup' } },
+                  [
+                    _c('pre', [
+                      _c(
+                        'code',
+                        { staticClass: 'lang-html hljs', attrs: { id: '1' } },
+                        [
+                          _c('span', { staticClass: 'hljs-tag' }, [
+                            _vm._v('<'),
+                            _c('span', { staticClass: 'hljs-name' }, [
+                              _vm._v('div')
+                            ]),
+                            _vm._v('>')
+                          ]),
+                          _vm._v('content'),
+                          _c('span', { staticClass: 'hljs-tag' }, [
+                            _vm._v('</'),
+                            _c('span', { staticClass: 'hljs-name' }, [
+                              _vm._v('div')
+                            ]),
+                            _vm._v('>')
+                          ])
+                        ]
+                      )
+                    ])
+                  ]
+                )
+              ],
+              1
+            ),
+            _vm._v(' '),
+            _c(
+              'div',
+              { staticClass: 'uk-position-top-right uk-margin-small-top' },
+              [
+                _c('ul', { staticClass: 'uk-iconnav' }, [
+                  _c('li', [
+                    _c(
+                      'a',
+                      {
+                        staticClass: 'js-copy',
+                        attrs: {
+                          title: 'Copy to Clipboard',
+                          'uk-tooltip': '',
+                          rel: '#1'
+                        }
+                      },
+                      [_c('vk-icon', { attrs: { icon: 'clipboard' } })],
+                      1
+                    )
+                  ]),
+                  _vm._v(' '),
+                  _c('li', [
+                    _c(
+                      'a',
+                      {
+                        staticClass: 'js-codepen',
+                        attrs: {
+                          title: 'Edit on Codepen',
+                          'uk-tooltip': '',
+                          rel: '#1'
+                        }
+                      },
+                      [_c('vk-icon', { attrs: { icon: 'flask' } })],
+                      1
+                    )
+                  ])
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      },
+      data: function data() {
+        return { foo: 'bar' }
+      }
+    }
+  }
+}
+"
+`;
+
+exports[`heading 1`] = `
+"{
+  render: function render() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _vm._m(0)
+  },
+  staticRenderFns: [
+    function() {
+      var _vm = this
+      var _h = _vm.$createElement
+      var _c = _vm._self._c || _h
+      return _c('div', [
+        _c(
+          'h1',
+          {
+            staticClass: 'uk-h1 tm-heading-fragment',
+            attrs: { id: 'heading' }
+          },
+          [_c('a', { attrs: { href: '#heading' } }, [_vm._v('Heading')])]
+        ),
+        _c(
+          'h2',
+          {
+            staticClass: 'uk-h3 tm-heading-fragment',
+            attrs: { id: 'heading' }
+          },
+          [_c('a', { attrs: { href: '#heading' } }, [_vm._v('Heading')])]
+        ),
+        _c(
+          'h3',
+          {
+            staticClass: 'uk-h4 tm-heading-fragment',
+            attrs: { id: 'heading' }
+          },
+          [_c('a', { attrs: { href: '#heading' } }, [_vm._v('Heading')])]
+        )
+      ])
+    }
+  ],
+  components: {}
+}
+"
+`;
+
+exports[`hr 1`] = `
+"{
+  render: function render() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _vm._m(0)
+  },
+  staticRenderFns: [
+    function() {
+      var _vm = this
+      var _h = _vm.$createElement
+      var _c = _vm._self._c || _h
+      return _c('div', [_c('hr', { staticClass: 'uk-margin-large' })])
+    }
+  ],
+  components: {}
+}
+"
+`;
+
+exports[`table 1`] = `
+"{
+  render: function render() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _vm._m(0)
+  },
+  staticRenderFns: [
+    function() {
+      var _vm = this
+      var _h = _vm.$createElement
+      var _c = _vm._self._c || _h
+      return _c('div', [
+        _c('div', { staticClass: 'uk-overflow-auto' }, [
+          _c('table', { staticClass: 'uk-table uk-table-divider' }, [
+            _c('thead', [
+              _c('tr', [
+                _c('th', { staticStyle: { 'text-align': 'left' } }, [
+                  _vm._v('Header')
+                ]),
+                _vm._v(' '),
+                _c('th', { staticStyle: { 'text-align': 'left' } }, [
+                  _vm._v('Header')
+                ])
+              ])
+            ]),
+            _vm._v(' '),
+            _c('tbody', [
+              _c('tr', [
+                _c('td', { staticStyle: { 'text-align': 'left' } }, [
+                  _vm._v('cell')
+                ]),
+                _vm._v(' '),
+                _c('td', { staticStyle: { 'text-align': 'left' } }, [
+                  _vm._v('cell')
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    }
+  ],
+  components: {}
+}
+"
+`;

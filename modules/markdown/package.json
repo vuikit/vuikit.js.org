@@ -1,0 +1,10 @@
+{
+  "name": "@vuikit-site/markdown",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "hash-sum": "^1.0.2",
+    "vue": "^2.5.13",
+    "vue-hot-reload-api": "^2.3.0"
+  }
+}
