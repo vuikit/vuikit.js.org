@@ -4,7 +4,7 @@
 
 ## Usage
 
-Any content, like a button, can toggle a dropdown. Ad the `vk-dropdown` component to a block element following the toggle.
+Any content, like a button, can toggle a dropdown. Add the `vk-dropdown` component to a block element following the toggle.
 
 ```html
 <vk-button></vk-button>

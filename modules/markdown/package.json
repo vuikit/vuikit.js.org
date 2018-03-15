@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "hash-sum": "^1.0.2",
-    "vue": "^2.5.13",
+    "vue": "^2.5.16",
     "vue-hot-reload-api": "^2.3.0"
   }
 }

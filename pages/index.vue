@@ -12,7 +12,7 @@
           </p>
 
           <p class="uk-margin-medium uk-text-lead">
-            A consistent and responsive <a href="https://vuejs.org/">Vue</a> UI framework,
+            A consistent and responsive <a href="https://vuejs.org/">Vue</a> UI library,
             <br class="uk-visible@s">
             based on the front-end framework <a href="https://getuikit.com/">UIkit</a>.
           </p>
@@ -64,13 +64,6 @@
             </a>
           </li>
         </ul>
-
-        <!-- <vk-button-link
-          href="./v0.6"
-          class="tm-button-default uk-position-center-right uk-position-medium uk-visible@m"
-        >
-          Vuikit 0.6 <vk-icon icon="arrow-right" />
-        </vk-button-link> -->
 
       </div>
     </div>

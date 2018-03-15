@@ -4,14 +4,10 @@ module.exports = {
   mode: 'spa',
   modules: [
     '~/modules/vuikit',
-    '~/modules/routes',
-    '~/modules/markdown',
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-115744052-1',
-      debug: {
-        sendHitTask: process.env.NODE_ENV === 'production'
-      }
-    }]
+    '~/modules/markdown'
+  ],
+  plugins: [
+    '~/plugins/ga'
   ],
   pageExtensions: ['js', 'vue', 'md'],
   css: [
@@ -30,7 +26,6 @@ module.exports = {
     ]
   },
   router: {
-    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? 'vuikit' : '',
     linkActiveClass: 'uk-active',
     linkExactActiveClass: 'uk-active'
   },

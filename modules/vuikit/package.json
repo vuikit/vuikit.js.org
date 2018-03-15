@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@vuikit/icons": "^0.6.0",
+    "@vuikit/icons": "^0.8.0",
     "@vuikit/icons-loader": "^0.1.0",
-    "vuikit": "^0.7.0"
+    "vuikit": "^0.8.0"
   }
 }

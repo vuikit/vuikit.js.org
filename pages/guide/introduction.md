@@ -2,7 +2,7 @@
 
 <p class="uk-text-lead">Getting familiar with Vuikit.</p>
 
-Vuikit is a [MIT](https://github.com/vuikit/vuikit/blob/develop/LICENSE) licensed [Vue](https://vuejs.org/) UI library based on [UIkit](https://getuikit.com/). In other words, Vuikit fulfills the necessity of a consistent and responsive framework for web site interfaces.
+Vuikit is a [MIT](https://github.com/vuikit/vuikit/blob/develop/LICENSE) licensed [Vue](https://vuejs.org/) UI library based on [UIkit](https://getuikit.com/). In other words, Vuikit fulfills the necessity of a consistent and responsive library for building web site interfaces.
 
 ***
 
