@@ -471,7 +471,7 @@ selected: []
   <vk-table :data="data" :selected-rows.sync="selected" hoverable cell-middle>
     <vk-table-column-select headless></vk-table-column-select>
     <vk-table-column title="Preserve" shrinked>
-      <img class="uk-preserve-width uk-border-circle" src="/images/avatar.jpg" width="40" alt="" />
+      <img class="uk-preserve-width uk-border-circle" src="/images/guide/avatar.jpg" width="40" alt="" />
     </vk-table-column>
     <vk-table-column title="Linked" linked>
       <a class="uk-link-reset" href="#">

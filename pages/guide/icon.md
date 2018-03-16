@@ -78,7 +78,7 @@ Use the `vk-icon-button` component to render an icon button, which can be used f
 You can also make any background image scale to the size of an icon. Use the `vk-icon-image` component and a background image path.
 
 ```example
-<vk-icon-image src="/images/dark.jpg"></vk-icon-image>
+<vk-icon-image src="/images/guide/dark.jpg"></vk-icon-image>
 ```
 
 ***

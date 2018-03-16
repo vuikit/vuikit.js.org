@@ -117,7 +117,7 @@ When using an image or colored background for the hero section of your website, 
 
 ```example
 <div class="uk-position-relative">
-  <img src="/images/light.jpg">
+  <img src="/images/guide/light.jpg">
   <div class="uk-position-top">
     <vk-navbar transparent>
       <vk-navbar-nav>

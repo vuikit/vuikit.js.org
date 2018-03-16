@@ -151,7 +151,7 @@ With the `header` and `footer` slots you can also divide a card around the defau
   <div slot="header">
     <vk-grid gutter="small" class="uk-flex-middle">
       <div class="uk-width-auto">
-        <img class="uk-border-circle" width="40" height="40" src="/images/avatar.jpg">
+        <img class="uk-border-circle" width="40" height="40" src="/images/guide/avatar.jpg">
       </div>
       <div class="uk-width-expand">
         <vk-card-title class="uk-margin-remove-bottom">Title</vk-card-title>
@@ -194,7 +194,7 @@ To display an image inside a card without any spacing, add one of the following 
   <div>
     <vk-card>
       <div slot="media-top">
-        <img src="/images/light.jpg" alt="">
+        <img src="/images/guide/light.jpg" alt="">
       </div>
       <div>
         <vk-card-title>Media Top</vk-card-title>
@@ -209,7 +209,7 @@ To display an image inside a card without any spacing, add one of the following 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       </div>
       <div slot="media-bottom">
-        <img src="/images/light.jpg" alt="">
+        <img src="/images/guide/light.jpg" alt="">
       </div>
     </vk-card>
   </div>
