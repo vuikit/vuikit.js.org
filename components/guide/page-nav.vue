@@ -27,7 +27,7 @@
             title="Edit this page"
             icon="pencil"
             target="_blank"
-            :href="`https://github.com/vuikit/vuikit-site/tree/develop${$route.fullPath}.md`"
+            :href="`https://github.com/vuikit/vuikit.js.org/tree/master/pages${$route.fullPath}.md`"
           ></vk-nav-item>
         </vk-nav>
       </vk-scrollspy-nav>
