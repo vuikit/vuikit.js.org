@@ -13,6 +13,7 @@ When using a build tool like Webpack or Browserify, you would tipicallly use [Np
 ```bash
 npm install vue
 npm install vuikit
+npm install @vuikit/icons
 ```
 
 ```js
