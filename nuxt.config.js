@@ -22,14 +22,14 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Vuikit Site and Documentation' },
       { property: 'twitter:card', content: 'summary_large_image' },
       { property: 'twitter:site', content: '@vuikit' },
-      { property: 'twitter:image', content: '/images/vuikit-meta.png' },
+      { property: 'twitter:image', content: 'https://vuikit.js.org/images/vuikit-meta.png' },
       { property: 'og:locale', content: 'en_GB' },
       { property: 'og:type', content: 'website' },
       { property: 'og:title', content: 'Vuikit' },
-      { property: 'og:description', content: 'Vuikit, a consistent and responsive Vue UI library for web site interfaces.' },
+      { property: 'og:description', content: 'A responsive Vue UI library based on the fron-tend framework UIkit.' },
       { property: 'og:url', content: 'https://vuikit.js.org/' },
       { property: 'og:site_name', content: 'Vuikit' },
-      { property: 'og:image', content: '/images/vuikit-meta.png' }
+      { property: 'og:image', content: 'https://vuikit.js.org/images/vuikit-meta.png' }
     ],
     link: [
       { rel: 'shortcut icon', href: '/favicon.png' },
