@@ -56,7 +56,7 @@
 
         <ul class="uk-subnav tm-subnav uk-flex-inline uk-flex-center uk-margin-remove-bottom" uk-margin>
           <li>
-            <span>Version 0.8</span>
+            <span>Version 0.8.2</span>
           </li>
           <li>
             <a class="uk-text-lowercase uk-text-middle" href="https://twitter.com/vuikit">
