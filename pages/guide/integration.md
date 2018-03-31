@@ -14,6 +14,7 @@ When using a build tool like Webpack or Browserify, you would tipicallly use [Np
 npm install vue
 npm install vuikit
 npm install @vuikit/icons
+npm install @vuikit/theme
 ```
 
 ```js
@@ -21,6 +22,8 @@ npm install @vuikit/icons
 import Vue from 'vue'
 import Vuikit from 'vuikit'
 import VuikitIcons from '@vuikit/icons'
+
+import '@vuikit/theme'
 
 Vue.use(Vuikit)
 Vue.use(VuikitIcons)
