@@ -8,7 +8,7 @@ Assuming you are already familiar with Vue installation lets see the different w
 
 ## With Build Tools
 
-When using a build tool like Webpack or Browserify, you would tipicallly use [Npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) to install the project dependencies and usually get as well the pre-built source files. Because of the easy of use and flexibility, this is the recommended way for a typical web project.
+When using a build tool like Webpack or Browserify, you would typically use [Npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) to install the project dependencies. This would also provide you with the pre-built source files. Because of its ease of use and flexibility, this is the recommended way for a typical web project.
 
 ```bash
 npm install vue
