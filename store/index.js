@@ -25,6 +25,7 @@ const createStore = () => {
           'Card': '/guide/card',
           'Drop': '/guide/drop',
           'Dropdown': '/guide/dropdown',
+          'Form': '/guide/form',
           'Grid': '/guide/grid',
           'Icon': '/guide/icon',
           'Iconnav': '/guide/iconnav',
