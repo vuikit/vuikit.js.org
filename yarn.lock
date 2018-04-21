@@ -7872,9 +7872,9 @@ vuex@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.0.1.tgz#e761352ebe0af537d4bb755a9b9dc4be3df7efd2"
 
-vuikit@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/vuikit/-/vuikit-0.8.2.tgz#12c2abb1aa029e32f338bc9195160a06b4f982ce"
+vuikit@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/vuikit/-/vuikit-0.8.3.tgz#60b5efc4b5b7c49acbf477fd5ff333357ad9e6e5"
   dependencies:
     vue "^2.5.16"
 

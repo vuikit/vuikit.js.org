@@ -7,8 +7,8 @@ module.exports = {
     '~/modules/markdown'
   ],
   plugins: [
-    '~/plugins/ga',
-    '~/plugins/chat'
+    { src: '~/plugins/ga', ssr: false },
+    { src: '~/plugins/chat', ssr: false }
   ],
   pageExtensions: ['js', 'vue', 'md'],
   css: [
