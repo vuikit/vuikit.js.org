@@ -164,40 +164,6 @@ data: [
 
 ***
 
-## Sortable
-
-To allow sorting the table data set the `sortedBy` prop, to indicate the current order status, and render the sortable columns with the `vk-table-column-sort` column instead. The `sortedBy` value should be an object composed of cell keys being ordered with it direction, `asc` or `desc`. E.g. `{ name: 'asc', city: 'desc' }`.
-
-```html
-<vk-table data sortedBy.sync="{ cell: dir }">
-  <vk-table-column-sort title cell>...</vk-table-column-sort>
-  <vk-table-column-sort title cell>...</vk-table-column-sort>
-</table>
-```
-
-The component doesn't sort the data, it only provides a hint through the `sortedBy` prop about when and how to sort it. The actual sorting should be abstracted in the data provider, example the component wrapper or the API server.
-
-```example
----
-data: [
-  { name: 'John A. Smith', city: 'San Francisco', state: 'CA' },
-  { name: 'Joan B. Jones', city: 'New York', state: 'NY' },
-  { name: 'Bob C. Uncle', city: 'Los Angeles', state: 'CA' }
-]
-sortedBy: { name: 'asc' }
----
-
-<vk-table :data="data" :sorted-by.sync="sortedBy">
-  <vk-table-column-sort title="Name" cell="name"></vk-table-column-sort>
-  <vk-table-column-sort title="City" cell="city"></vk-table-column-sort>
-  <vk-table-column-sort title="State" cell="state"></vk-table-column-sort>
-</vk-table>
-```
-
-==Note== Hold the `shift` key down when sorting to enable sorting by multiple values.
-
-***
-
 ## Selectable
 
 Set the `row-selectable` or `rows-selectable` props to enable the table single or multiple row selection.
@@ -350,6 +316,40 @@ data: [
 ```
 
 ==Note== Resize the browser window to see the columns stack.
+
+***
+
+## Sorting
+
+As `vk-table` is not aware of the full extent of the data, it cannot take care of the sorting. The actual sorting must be abstracted, for example in the API or a simple component wrapper, and indicate the current sort state with the `sortedBy` prop. The value is expected to be an object composed of cell `keys` that are being ordered with it direction, `asc` or `desc`. E.g. `{ name: 'asc', city: 'desc' }`.
+
+To render sortable columns use the `vk-table-column-sort` column component. It will read the `sortedBy` prop to show the order arrow as well as to trigger a sort update through prop syncing. It supports multiple sorting by holding down the `shift` key.
+
+```html
+<vk-table data sortedBy="{ cell: dir }">
+  <vk-table-column-sort title cell>...</vk-table-column-sort>
+  <vk-table-column-sort title cell>...</vk-table-column-sort>
+</table>
+```
+
+```example
+---
+data: [
+  { name: 'John A. Smith', city: 'San Francisco', state: 'CA' },
+  { name: 'Joan B. Jones', city: 'New York', state: 'NY' },
+  { name: 'Bob C. Uncle', city: 'Los Angeles', state: 'CA' }
+]
+sortedBy: { name: 'asc' }
+---
+
+<vk-table :data="data" :sorted-by.sync="sortedBy">
+  <vk-table-column-sort title="Name" cell="name"></vk-table-column-sort>
+  <vk-table-column-sort title="City" cell="city"></vk-table-column-sort>
+  <vk-table-column-sort title="State" cell="state"></vk-table-column-sort>
+</vk-table>
+```
+
+==Note== The demo doesn't sort the data, it only displays the UI updates.
 
 ***
 
