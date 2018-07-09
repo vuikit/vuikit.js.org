@@ -22,7 +22,7 @@
   "devDependencies": {
     "@vuikit/theme": "^0.8.0",
     "babel-eslint": "^8.2.2",
-    "eslint": "^4.19.1",
+    "eslint": "^5.1.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-html": "^4.0.2",
     "eslint-plugin-import": "^2.9.0",
@@ -32,9 +32,9 @@
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
     "micro": "^9.1.4",
-    "nuxt": "^1.4.0",
+    "nuxt": "^1.4.1",
     "push-dir": "^0.4.1",
-    "uikit": "3.0.0-beta.40",
+    "uikit": "3.0.0-rc.8",
     "vue-analytics": "^5.9.1"
   }
 }
