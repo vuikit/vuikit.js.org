@@ -1,0 +1,9 @@
+{
+  "name": "@vuikit.js.org/md-loader",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "hash-sum": "^1.0.2",
+    "vue-hot-reload-api": "^2.3.0"
+  }
+}

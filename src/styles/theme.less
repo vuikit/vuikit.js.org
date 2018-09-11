@@ -1,0 +1,311 @@
+@tm-main-background: #195f9b;
+
+// Base
+// ========================================================================
+
+// @import (css) url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+// @import (css) url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+@global-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+@global-font-size: 15px;
+
+@global-xxlarge-font-size: 38px;
+@global-xlarge-font-size: 30px;
+@global-large-font-size: 24px;
+@global-medium-font-size: 20px;
+@global-small-font-size: 14px;
+
+@base-code-font-family: "Roboto Mono", Monaco, courier, monospace;
+@base-code-font-size: 12px;
+
+.hook-base-body() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+//
+// HTML
+//
+
+/*
+ * Force vertical scrollbar
+ * 1. `overflow-x` has to be on the `body` element for Safari to prevent horizontal scrolling on touch
+      This causes a random bug showing a vertical scrollbar in combination with some fonts like `Poppins`
+      This is why `overflow-y` must also be set to `hidden`
+ */
+
+html {
+  overflow-y: scroll;
+}
+
+/* 1 */
+body {
+  overflow: hidden;
+}
+
+
+// Button
+// ========================================================================
+
+@inverse-button-default-color:                 @inverse-global-color;
+@inverse-button-primary-color:                 @global-primary-background;
+@inverse-button-primary-background:            #fff;
+
+.tm-button-default,
+.tm-button-primary {
+  border-radius: 500px;
+}
+
+.tm-button-large {
+  line-height: 48px;
+}
+
+.hook-inverse() {
+  .tm-button-default {
+    color: @inverse-global-color;
+    border-color: @inverse-global-muted-color;
+  }
+
+  .tm-button-primary {
+    background: #fff !important;
+    color: @global-primary-background !important;
+  }
+}
+
+.hook-inverse-button-default() {
+  border-color: @inverse-global-muted-color;
+}
+
+.hook-inverse-button-primary-hover() {
+  box-shadow: 0 10px 40px darken(@global-primary-background, 5%);
+}
+
+// Heading
+// ========================================================================
+
+.tm-heading-fragment > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+  h2.tm-heading-fragment > a {
+    display: block;
+    margin-left: -25px;
+  }
+
+  h2.tm-heading-fragment > a:before {
+    content: "#";
+    width: 25px;
+    float: left;
+    color: @global-muted-color;
+  }
+}
+
+
+// Section
+// ========================================================================
+
+.tm-section-texture {
+  background-image: url("../assets/images/section-background.svg");
+  background-position: 50% 17vh;
+  background-repeat: no-repeat;
+  background-color: @tm-main-background;
+}
+
+.tm-section-texture .tm-button-primary:hover {
+  box-shadow: 0 10px 40px darken(@tm-main-background, 5%)
+}
+
+// Nav
+// ========================================================================
+
+.tm-nav > li.uk-active > a {
+  position: relative;
+}
+
+.tm-nav > li.uk-active > a:before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -25px;
+  width: 15px;
+  border-top: 1px solid @global-primary-background;
+}
+
+.tm-nav .uk-nav-header {
+  padding: 8px 0;
+  border-bottom: 1px solid @global-border;
+}
+
+
+// Navbar
+// ========================================================================
+
+// Line Mode
+@navbar-nav-item-line-margin-vertical: 25px;
+@navbar-nav-item-line-margin-horizontal: @navbar-nav-item-padding-horizontal;
+@navbar-nav-item-line-height: 1px;
+@navbar-nav-item-line-background: currentColor;
+@navbar-nav-item-line-transition-duration: 0.3s;
+
+.tm-navbar-container .uk-navbar-nav > li > a,
+.tm-navbar-container .uk-navbar-item:not(.uk-logo),
+.tm-navbar-container .uk-navbar-toggle {
+  font-size: 13px;
+}
+
+.tm-navbar-container:not(.uk-navbar-transparent) {
+  background: @tm-main-background;
+}
+
+// Color Mode
+.tm-navbar-container:not(.uk-navbar-transparent):extend(.uk-light all) {}
+
+.tm-navbar-container .uk-navbar-nav > li > a {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: @navbar-nav-item-line-margin-horizontal;
+    right: ~"calc(102% - @{navbar-nav-item-line-margin-horizontal})";
+    bottom: @navbar-nav-item-line-margin-vertical;
+    height: @navbar-nav-item-line-height;
+    background-color: @navbar-nav-item-line-background;
+    -webkit-transition: @navbar-nav-item-line-transition-duration ease-in-out;
+    transition: @navbar-nav-item-line-transition-duration ease-in-out;
+    -webkit-transition-property: right;
+    transition-property: right;
+  }
+}
+
+.tm-navbar-container .uk-navbar-nav > li > a:hover::before {
+  right: @navbar-nav-item-line-margin-horizontal;
+}
+
+
+// Subnav
+// ========================================================================
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+  .tm-subnav {
+    margin-left: -50px;
+  }
+  .tm-subnav > * {
+    padding-left: 50px;
+  }
+}
+
+.tm-subnav > * > :first-child {
+  text-transform: capitalize;
+}
+
+
+// Text
+// ========================================================================
+
+.tm-text-large {
+  font-size: 18px;
+}
+
+
+/* Guide Section - Sidebars
+ ========================================================================== */
+
+@sidebar-left-width: 240px;
+@sidebar-left-width-xl: 300px;
+
+@sidebar-right-width: 200px;
+@sidebar-right-left: 0px;
+@sidebar-right-left-xl: 60px;
+
+
+/* Reset container */
+
+.tm-main .uk-container {
+  padding-left: @container-padding-horizontal;
+  padding-right: @container-padding-horizontal;
+}
+
+/* Phone landscape and bigger */
+@media (min-width: @breakpoint-small) {
+  .tm-main .uk-container {
+    padding-left: @container-padding-horizontal-s;
+    padding-right: @container-padding-horizontal-s;
+  }
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+  .tm-main .uk-container {
+    padding-left: @container-padding-horizontal-m;
+    padding-right: @container-padding-horizontal-m;
+  }
+}
+
+/*
+ * Sidebar Left
+ */
+
+.tm-sidebar-left {
+  position: fixed;
+  top: @navbar-nav-item-height;
+  bottom: 0;
+  box-sizing: border-box;
+  width: @sidebar-left-width !important;
+  padding: 40px 40px 60px 40px;
+  border-right: 1px @global-border solid;
+  overflow: auto;
+}
+
+/*
+ * Sidebar Right
+ */
+
+.tm-sidebar-right {
+  position: absolute;
+  top: 0;
+  left: ~"calc(100% + @{sidebar-right-left})";
+  width: @sidebar-right-width;
+}
+
+/* Tablet landscape and bigger */
+@media (min-width: @breakpoint-medium) {
+  .tm-sidebar-left + .tm-main {
+    padding-left: @sidebar-left-width;
+  }
+}
+
+/* Desktop and bigger */
+@media (min-width: @breakpoint-large) {
+  .tm-sidebar-right {
+    left: ~"calc(100% + @{sidebar-right-left})";
+  }
+
+  .tm-sidebar-left + .tm-main {
+    padding-left: @sidebar-left-width - (@sidebar-right-width +
+          @sidebar-right-left);
+  }
+}
+
+/* Large screen and bigger */
+@media (min-width: 1400px) {
+  .tm-sidebar-left {
+    width: @sidebar-left-width-xl !important;
+    padding: 45px 45px 60px 45px;
+  }
+
+  .tm-sidebar-right {
+    left: ~"calc(100% + @{sidebar-right-left-xl})";
+  }
+
+  .tm-sidebar-left + .tm-main {
+    padding-left: @sidebar-left-width-xl - (@sidebar-right-width +
+          @sidebar-right-left-xl);
+  }
+}

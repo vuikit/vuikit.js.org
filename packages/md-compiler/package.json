@@ -1,15 +1,14 @@
 {
   "private": true,
-  "name": "@vuikit-site/md-compiler",
-  "version": "0.0.1",
+  "name": "@vuikit.js.org/md-compiler",
+  "version": "0.1.0",
   "description": "Convert markdown to vue component.",
-  "main": "lib/index.js",
+  "main": "lib/markdown.js",
   "files": [
     "lib"
   ],
   "scripts": {
-    "test": "npm run lint && jest",
-    "lint": "xo"
+    "test": "jest"
   },
   "author": {
     "name": "Miljan Aleksic",
@@ -28,33 +27,6 @@
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
-    "jest-cli": "^23.3.0",
-    "xo": "^0.20.3"
-  },
-  "xo": {
-    "envs": [
-      "jest"
-    ],
-    "semicolon": false,
-    "space": true,
-    "rules": {
-      "no-div-regex": "off",
-      "unicorn/filename-case": "off",
-      "func-names": "off",
-      "object-curly-spacing": [
-        "error",
-        "always"
-      ],
-      "capitalized-comments": 0,
-      "padded-blocks": 0,
-      "space-before-function-paren": [
-        "error",
-        {
-          "anonymous": "always",
-          "named": "always",
-          "asyncArrow": "always"
-        }
-      ]
-    }
+    "jest-cli": "^23.3.0"
   }
 }

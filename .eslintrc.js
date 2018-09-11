@@ -1,18 +1,17 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
   env: {
-    browser: true,
     node: true
   },
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: [
-    'html'
+  'extends': [
+    'plugin:vue/essential',
+    '@vue/standard'
   ],
-  // add your custom rules here
   rules: {
-    'padded-blocks': 0
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
-  globals: {}
+  parserOptions: {
+    parser: 'babel-eslint'
+  }
 }

@@ -1,7 +1,6 @@
 const prettier = require('prettier')
 const compiler = require('vue-template-compiler')
 const stripWith = require('vue-template-es2015-compiler')
-const toFunction = require('./toFunction')
 
 module.exports = function ({ template, data, components, options }) {
   if (typeof template !== 'string') {
@@ -71,7 +70,12 @@ module.exports = function ({ template, data, components, options }) {
 
 function prettify (code) {
   return prettier.format(code, {
+    parser: 'babylon',
     semi: false,
     singleQuote: true
   })
+}
+
+function toFunction (code, name = '') {
+  return `function ${name}(){${code}}`
 }

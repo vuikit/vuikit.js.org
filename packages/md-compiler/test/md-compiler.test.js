@@ -1,4 +1,4 @@
-const markdown = require('../')
+const markdown = require('../lib/markdown')
 
 function snapshot (title, text) {
   test(title, () => {

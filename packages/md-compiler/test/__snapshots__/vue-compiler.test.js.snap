@@ -35,7 +35,7 @@ exports[`components 1`] = `
         var _c = _vm._self._c || _h
         return _c('div', [_vm._v('component bar')])
       },
-      data: function data() {
+      data: function() {
         return { foo: 'bar' }
       }
     }
@@ -51,7 +51,7 @@ exports[`data 1`] = `
     var _c = _vm._self._c || _h
     return _c('div', [_vm._v('content')])
   },
-  data: function data() {
+  data: function() {
     return { foo: 'bar' }
   }
 }"
