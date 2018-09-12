@@ -17,35 +17,17 @@
             based on the front-end framework <a href="https://getuikit.com/">UIkit</a>.
           </p>
 
-          <div class="uk-grid uk-child-width-auto uk-grid-medium uk-flex-inline uk-flex-center">
-            <div>
-              <router-link
-                to="guide"
-                tag="vk-button-link"
-                v-text="'Get Started'"
-                class="uk-button-primary uk-button-large tm-button-primary tm-button-large uk-visible@s"
-              ></router-link>
-              <router-link
-                to="guide"
-                tag="vk-button-link"
-                v-text="'Get Started'"
-                class="uk-button-primary tm-button-primary uk-hidden@s"
-              ></router-link>
-            </div>
-            <div>
-              <vk-button-link
-                size="large"
-                v-text="'Github'"
-                href="https://github.com/vuikit/vuikit"
-                class="tm-button-default tm-button-large uk-visible@s"
-              ></vk-button-link>
-              <vk-button-link
-                v-text="'Github'"
-                href="https://github.com/vuikit/vuikit"
-                class="tm-button-default uk-hidden@s"
-              ></vk-button-link>
-            </div>
-          </div>
+          <router-link
+            to="guide"
+            tag="vk-button-link"
+            v-text="'Get Started'"
+            class="tm-button-default"
+          ></router-link>
+
+          <p class="uk-margin-medium uk-width-large uk-align-center">
+            If you are enjoying Vuikit and want to support the project consider making a small
+            <a href="https://www.paypal.me/MiljanAleksic" target="_blank">donation</a>. It means a lot :)
+          </p>
 
         </div>
       </div>
@@ -61,6 +43,11 @@
           <li>
             <a class="uk-text-lowercase uk-text-middle" href="https://twitter.com/vuikit">
               <vk-icon icon="twitter" /> @vuikit
+            </a>
+          </li>
+          <li>
+            <a class="uk-text-lowercase uk-text-middle" href="https://github.com/vuikit/vuikit">
+              <vk-icon icon="github" /> GitHub
             </a>
           </li>
         </ul>
