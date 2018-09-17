@@ -16,7 +16,7 @@ import PluginChat from '@/plugins/chat'
 
 Vue.use(Vuikit)
 Vue.use(VuikitIcons)
-Vue.use(PluginGA)
+Vue.use(PluginGA, router)
 Vue.use(PluginChat)
 
 Vue.config.productionTip = false
