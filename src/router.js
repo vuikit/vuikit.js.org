@@ -8,6 +8,7 @@ import Roadmap from './views/Roadmap'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   linkActiveClass: 'uk-active',
   linkExactActiveClass: 'uk-active',
   routes: [
