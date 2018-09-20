@@ -20,11 +20,12 @@
 
     <div class="tm-main uk-section uk-section-default">
       <div class="uk-container uk-container-small uk-position-relative">
-        <!-- <nuxt-child
+        <div
           v-vk-scroll.force="{ target: `h2 a, h3 a, a.tm-internal-link[href*='#']`, offset: 100 }"
           @beforeScroll.native="updateHash"
-        ></nuxt-child> -->
-        <router-view/>
+        >
+          <router-view/>
+        </div>
         <page-nav
           v-vk-scroll="{ target: 'a', offset: 100 }"
           @beforeScroll.native="updateHash"
@@ -51,17 +52,15 @@ export default {
   watch: {
     $route () {
       this.$nextTick(() => {
-        // window.$nuxt.$once('triggerScroll', () => {
-        //   this.sections = this.getSections()
-        // })
+        this.sections = this.getSections()
       })
     }
   },
   methods: {
     getSections () {
-      return []
       // retrieve sections from the component constructor options
-      // return [...this.$route.matched].pop().components.default.options.sections || []
+      const lastMatchedRoute = [...this.$route.matched].pop()
+      return get(lastMatchedRoute, 'components.default.sections', [])
     },
     updateHash (e) {
       this.$router.replace({ hash: e.detail.from.hash })
@@ -81,5 +80,9 @@ export default {
       }
     })
   }
+}
+
+function get (obj, path) {
+  return path.split('.').reduce((acc, val) => acc && acc[val], obj)
 }
 </script>
