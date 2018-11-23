@@ -173,7 +173,7 @@ Sync the selected rows with the `selected-rows` prop.
 <vk-table row-selectable :selected-rows="[]">
   <vk-table-column title cell></vk-table-column>
   <vk-table-column title cell></vk-table-column>
-</table>
+</vk-table>
 ```
 
 ```example
@@ -212,7 +212,7 @@ Use the `vk-table-column-select` to render a column of checkboxes indicating the
 <vk-table>
   <vk-table-column-select></vk-table-column-select>
   <vk-table-column></vk-table-column>
-</table>
+</vk-table>
 ```
 
 ```example
@@ -329,7 +329,7 @@ To render sortable columns use the `vk-table-column-sort` column component. It w
 <vk-table data sortedBy="{ cell: dir }">
   <vk-table-column-sort title cell>...</vk-table-column-sort>
   <vk-table-column-sort title cell>...</vk-table-column-sort>
-</table>
+</vk-table>
 ```
 
 ```example
@@ -372,7 +372,7 @@ Both slots have access to a scope of, `{ cell, row, selected, allSelected }`
     <div slot-scope="scope">...</div>
     <div slot="empty" slot-scope="scope">...</div>
   </vk-table-column>
-</table>
+</vk-table>
 ```
 
 ```example
