@@ -10,7 +10,7 @@ To render a dynamic table use `vk-table` combined with one or more `vk-table-col
 <vk-table data>
   <vk-table-column title cell></vk-table-column>
   <vk-table-column title cell></vk-table-column>
-</table>
+</vk-table>
 ```
 
 ```example
