@@ -43,11 +43,11 @@ The `vk-modal-close` component renders a close button element that could be plac
 
 ```html
 <vk-modal>
-  <vk-modal-close></vk-button-close>
+  <vk-modal-close></vk-modal-close>
 </vk-modal>
 
 <vk-modal>
-  <vk-modal-close outside></vk-button-close>
+  <vk-modal-close outside></vk-modal-close>
 </vk-modal>
 ```
 
