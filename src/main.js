@@ -7,7 +7,7 @@ import navigation from './navigation.json'
 import '@/styles/index.less'
 
 import PluginGA from '@/plugins/ga'
-import PluginChat from '@/plugins/chat'
+// import PluginChat from '@/plugins/chat'
 
 // import IconFlask from '~/assets/icons/flask.svg'
 // import IconClipboard from '~/assets/icons/clipboard.svg'
@@ -17,7 +17,7 @@ import PluginChat from '@/plugins/chat'
 Vue.use(Vuikit)
 Vue.use(VuikitIcons)
 Vue.use(PluginGA, router)
-Vue.use(PluginChat)
+// Vue.use(PluginChat)
 
 Vue.config.productionTip = false
 
