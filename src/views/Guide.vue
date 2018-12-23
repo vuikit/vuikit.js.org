@@ -3,7 +3,7 @@
     <div class="tm-sidebar-left uk-visible@m">
       <h3>Guide</h3>
       <guide-nav
-        title="Getting Starger"
+        title="Getting Started"
         :items="navigation['Getting Started']"
         class="uk-margin-bottom"
       />
