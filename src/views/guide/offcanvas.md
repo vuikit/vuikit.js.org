@@ -13,7 +13,7 @@ Use the `vk-offcanvas` component to render an offcanvas sidebar and an optional 
 
   <vk-offcanvas show>
     <vk-offcanvas-close></vk-offcanvas-close>
-  </div>
+  </vk-offcanvas>
   
 </vk-offcanvas-content>
 ```
