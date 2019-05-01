@@ -61,7 +61,7 @@ Use the `vk-nav-item-parent` component as a nesting parent for sub items.
 Use one of the following components in a list to create a header or a divider between items.
 
 ```html
-<vk-nav-item-header title></vk-nav-item-divider>
+<vk-nav-item-header title></vk-nav-item-header>
 
 <vk-nav-item-divider title></vk-nav-item-divider>
 ```
