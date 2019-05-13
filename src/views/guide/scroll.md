@@ -52,10 +52,10 @@ If you apply `v-vk-scroll` to an element other that anchor it will target all th
 
 ## Callbacks
 
-To receive a callback when scrolling has completed, you can listen to the `afterScroll` event on the element that triggered the scrolling. As well as listen to `beforeSroll` to do some action or prevent scrolling by returning `false`.
+To receive a callback when scrolling has completed, you can listen to the `afterScroll` event on the element that triggered the scrolling. As well as listen to `beforeScroll` to do some action or prevent scrolling by returning `false`.
 
 ```html
-<a href="#my-id" v-vk-scroll @beforeSroll @afterScroll></a>
+<a href="#my-id" v-vk-scroll @beforeScroll @afterScroll></a>
 ```
 
 ```example
