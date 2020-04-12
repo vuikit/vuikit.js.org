@@ -2,13 +2,13 @@
 
 <p class="uk-text-lead">Integrate Vuikit into your project.</p>
 
-Assuming you are already familiar with Vue installation lets see the different ways to integrate Vuikit to it. If you are not or need some refreshing, please check the [Vue documentation](https://vuejs.org/v2/guide/installation.html).
+Assuming you are already familiar with Vue installation, here are different ways to integrate Vuikit with Vue. If you're not familiar with Vue or need a refresher, please check the [Vue documentation](https://vuejs.org/v2/guide/installation.html).
 
 ***
 
 ## With Build Tools
 
-When using a build tool like Webpack or Browserify, you would typically use [Npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) to install the project dependencies. This would also provide you with the pre-built source files. Because of its ease of use and flexibility, this is the recommended way for a typical web project.
+When using a build tool like Webpack or Browserify, use [Npm](https://www.npmjs.com) or [Yarn](https://yarnpkg.com) to install the project dependencies. This also provides the pre-built source files. Because of its ease of use and flexibility, this is the recommended way for a typical web project.
 
 ```bash
 npm install vue
@@ -55,7 +55,7 @@ export default {
 
 ## Without Build Tools
 
-If you are including Vue via a script tag without a build tool, first of all [download](/download) the Vuikit main package. The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. 
+If you are including Vue via a script tag without a build tool, first [download](/download) the Vuikit main package. The Zip file contains the compiled CSS and JavaScript files, which is everything you need to get started. 
 
 ### Package contents
 
@@ -66,7 +66,7 @@ If you are including Vue via a script tag without a build tool, first of all [do
 
 ### HTML markup
 
-Add the compiled and minified CSS and JavaScript to the header of your HTML5 document for production. Also include the Vuikit Icon library if required. For a basic setup, that's it.
+Add the compiled and minified CSS and JavaScript to the header of your HTML5 document for production. Also include the Vuikit Icon library if required. For a basic setup, that's it!
 
 ```html
 <!DOCTYPE html>
