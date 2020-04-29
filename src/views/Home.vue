@@ -26,7 +26,7 @@
 
           <p class="uk-margin-medium uk-width-large uk-align-center">
             If you are enjoying Vuikit and want to support the project consider making a small
-            <a href="https://www.paypal.me/MiljanAleksic" target="_blank">donation</a>. It means a lot :)
+            <a href="https://github.com/sponsors/miljan-aleksic" target="_blank">donation</a>. It means a lot :)
           </p>
 
         </div>
